@@ -1,10 +1,6 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: #ccc;
+  font-size: 14px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +10,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: #ccc;
+  min-height: 5%;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-size: 26px;
+  color:#3082d6;
+  padding-top: 15px;
 }
 
 .App-link {
@@ -35,4 +31,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.tabs-container {
+  background-color: #ccc;
+  font-size: 16px;
+  height: 95%;
+}
+
+.employee-list {
+  font-size: 16px;
+}
+
+.tabs-container .tab-likelihood.nav-tabs {
+  background-color: transparent !important;
+  border-bottom: 2px #ccc solid;
+}
+.tabs-container .tab-likelihood.nav-tabs > li {
+  float: none;
+  display: inline-block;
+}
+.tabs-container .tab-likelihood.nav-tabs > li > button {
+  top: 1px;
+  padding: 14px 20px;
+  border: none;
+  background-color: #ccc;
+}
+.tab-likelihood.nav-tabs > li button:hover {
+  cursor: pointer;
+}
+.tab-likelihood.nav-tabs > li button:hover,
+.tab-likelihood.nav-tabs > li.active button,
+.tab-likelihood.nav-tabs > li.active button:hover,
+.tab-likelihood.nav-tabs > li button.active,
+.tab-likelihood.nav-tabs > li.active button.active:focus {
+  color: #3082d6;
+  border-bottom: 3px solid #3082d6;
+}
+
+.add-new-btn {
+  float: right;
+  margin-right: 15px;
+  padding: 8px 8px;
+}
+.list-filter {
+  padding: 8px 8px;
+}
+
+.action-btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer; 
+  margin: 3px 6px;
+  border: 1px solid #3082d6;
+  padding: 3px;
+}
+
+.m-b-sm {
+  margin-bottom: 10px;
+}
+.m-t-sm {
+  margin-top: 10px;
+}
+
+.m-r-sm {
+  margin-right: 10px;
 }
